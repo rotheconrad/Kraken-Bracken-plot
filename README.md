@@ -1,7 +1,7 @@
 # Kracken-Bracken-plot
  Creates stacked bar plots from Kracken and Bracken output. The plot is a vectorized pdf file that can be opened in Adobe Illustrator or other for additional modification.
 
-
+![Kracken-Bracken plot](https://github.com/rotheconrad/Kracken-Bracken-plot/blob/main/Kracken-Bracken-plot_example_genus.png)
 
 Builds bar plots from Bracken results with optional adjustment for
 unclassified reads from Kraken results.
@@ -58,7 +58,7 @@ optional input:
 output: stacked bar plots in vector pdf format. Publication ready.
 
 Ref Links:
-https://ccb.jhu.edu/software/kraken2
-https://github.com/DerrickWood/kraken2
-https://ccb.jhu.edu/software/bracken
-https://github.com/jenniferlu717/Bracken
+	- https://ccb.jhu.edu/software/kraken2
+	- https://github.com/DerrickWood/kraken2
+	- https://ccb.jhu.edu/software/bracken
+	- https://github.com/jenniferlu717/Bracken
