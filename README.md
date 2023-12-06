@@ -59,7 +59,7 @@ output: stacked bar plots in vector pdf format. Publication ready.
 
 Ref Links:
 
-	* https://ccb.jhu.edu/software/kraken2
-	* https://github.com/DerrickWood/kraken2
-	* https://ccb.jhu.edu/software/bracken
-	* https://github.com/jenniferlu717/Bracken
+* https://ccb.jhu.edu/software/kraken2
+* https://github.com/DerrickWood/kraken2
+* https://ccb.jhu.edu/software/bracken
+* https://github.com/jenniferlu717/Bracken
