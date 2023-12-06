@@ -1,0 +1,55 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Proteobacteria	1224	P	822106	14658	836764	0.62424
+Actinobacteria	201174	P	101734	4292	106026	0.07910
+Firmicutes	1239	P	85738	65494	151232	0.11282
+Cyanobacteria	1117	P	19520	-1	19519	0.01456
+Tenericutes	544448	P	5740	131	5871	0.00438
+Chloroflexi	200795	P	5683	-56	5627	0.00420
+Deinococcus-Thermus	1297	P	3523	11	3534	0.00264
+Armatimonadetes	67819	P	328	0	328	0.00024
+Bacteroidetes	976	P	63147	528	63675	0.04750
+Chlorobi	1090	P	1691	1	1692	0.00126
+Ignavibacteriae	1134404	P	722	51	773	0.00058
+Balneolaeota	1936987	P	144	30	174	0.00013
+Gemmatimonadetes	142182	P	1192	23	1215	0.00091
+Candidatus Cloacimonetes	456828	P	335	0	335	0.00025
+Fibrobacteres	65842	P	146	0	146	0.00011
+Planctomycetes	203682	P	14647	-13	14634	0.01092
+Verrucomicrobia	74201	P	2990	-20	2970	0.00222
+Chlamydiae	204428	P	1008	4	1012	0.00075
+Kiritimatiellaeota	134625	P	163	305	468	0.00035
+Candidatus Omnitrophica	67812	P	123	0	123	0.00009
+Spirochaetes	203691	P	4367	-84	4283	0.00320
+Acidobacteria	57723	P	4320	1	4321	0.00322
+Fusobacteria	32066	P	3135	93	3228	0.00241
+Thermotogae	200918	P	1864	83	1947	0.00145
+Aquificae	200783	P	1185	-2	1183	0.00088
+Nitrospirae	40117	P	1034	-2	1032	0.00077
+Thermodesulfobacteria	200940	P	877	6	883	0.00066
+Deferribacteres	200930	P	871	5	876	0.00065
+Synergistetes	508458	P	861	737	1598	0.00119
+Calditrichaeota	1930617	P	481	116	597	0.00045
+Candidatus Bipolaricaulota	67810	P	58	0	58	0.00004
+Candidatus Saccharibacteria	95818	P	54	15	69	0.00005
+Elusimicrobia	74152	P	217	-2	215	0.00016
+Dictyoglomi	68297	P	213	0	213	0.00016
+Caldiserica	67814	P	119	0	119	0.00009
+Chrysiogenetes	200938	P	111	9	120	0.00009
+Coprothermobacterota	2138240	P	73	5	78	0.00006
+Thaumarchaeota	651137	P	59803	354	60157	0.04488
+Crenarchaeota	28889	P	1012	65	1077	0.00080
+Euryarchaeota	28890	P	7577	197	7774	0.00580
+Candidatus Thermoplasmatota	2283796	P	1373	-145	1228	0.00092
+Candidatus Lokiarchaeota	1655434	P	114	5	119	0.00009
+Chordata	7711	P	23227	2181	25408	0.01895
+Ascomycota	4890	P	2643	854	3497	0.00261
+Basidiomycota	5204	P	275	40	315	0.00023
+Microsporidia	6029	P	12	0	12	0.00001
+Apicomplexa	5794	P	1649	97	1746	0.00130
+Ciliophora	5878	P	12	0	12	0.00001
+Bacillariophyta	2836	P	119	0	119	0.00009
+Evosea	2605435	P	304	22	326	0.00024
+Euglenozoa	33682	P	152	64	216	0.00016
+Uroviricota	2731618	P	1323	-63	1260	0.00094
+Nucleocytoviricota	2732007	P	210	-1	209	0.00016
+Negarnaviricota	2497569	P	10	0	10	0.00001
