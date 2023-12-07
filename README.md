@@ -91,3 +91,7 @@ Ref Links:
 * https://github.com/DerrickWood/kraken2
 * https://ccb.jhu.edu/software/bracken
 * https://github.com/jenniferlu717/Bracken
+
+  
+<img width="930" alt="image" src="https://github.com/rotheconrad/Kracken-Bracken-plot/assets/36962040/67d1abae-0ac8-48f3-825e-7a7aeecf9b85">
+
