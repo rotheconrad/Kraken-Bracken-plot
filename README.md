@@ -56,6 +56,7 @@ optional input:
     This is a .txt file with one entry per line of classification, color.
     The classification must match those used in the input file.
     The colors can be whatever you want. I prefer to use hex colors.
+
     Example: 
                 Alteromonadales\t#2ca25f
                 Sphingobacteriales\t#8856a7
