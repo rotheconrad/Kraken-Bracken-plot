@@ -21,6 +21,8 @@ Total Reads" is only the fractional total of reads assigned to the
 optional adjustment, our plots will show the fraction of total reads
 (including unclassified).
 
+Input files are all two column tab ("\t") separated files (tsv).
+
 input file: List of Bracken report files, SampleName
 
 -i, input_file_specificiations:
@@ -28,9 +30,9 @@ input file: List of Bracken report files, SampleName
     The output plot will follow the order in this file.
 
     Example:
-                Path/to/BrackenFilename, SampleA
-                Path/to/BrackenFilename, SampleB
-                Path/to/BrackenFilenmae, SampleC
+                Path/to/BrackenFilename\tSampleA
+                Path/to/BrackenFilename\tSampleB
+                Path/to/BrackenFilenmae\tSampleC
 
 optional input:
 
@@ -42,18 +44,18 @@ optional input:
     same as the input file.
 
     Example:
-                Path/to/KrakenFilename, SampleA
-                Path/to/KrakenFilename, SampleB
-                Path/to/KrakenFilename, SampleC
+                Path/to/KrakenFilename\tSampleA
+                Path/to/KrakenFilename\tSampleB
+                Path/to/KrakenFilename\tSampleC
 
 -l, custom_legend_file:
     This is a .txt file with one entry per line of classification, color.
     The classification must match those used in the input file.
     The colors can be whatever you want. I prefer to use hex colors.
     Example: 
-                Alteromonadales, #2ca25f
-                Sphingobacteriales, #8856a7
-                Rickettsiales, #43a2ca
+                Alteromonadales\t#2ca25f
+                Sphingobacteriales\t#8856a7
+                Rickettsiales\t#43a2ca
 
 output: stacked bar plots in vector pdf format. Publication ready.
 
