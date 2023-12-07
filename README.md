@@ -9,10 +9,10 @@ unclassified reads from Kraken results.
 ## Motivation
 
 Bracken modifies Kraken results for a more acurate abundance estimate
-which is great but Bracken does not include the unclassified reads. I
-think it is important for a thorough analysis to report the fraction of
+which is great but Bracken does not include the unclassified reads. For
+more a thorough analysis, this scripts incorporates the fraction of
 the metagenome that is not classified compared to what is classified.
-Environmental samples are frequently >50% unclassified.
+This is important since environmental samples are frequently >50% unclassified.
 
 Therefore, this script has the option of accepting the Kraken reports
 that the Bracken reports were generated from. It will read the total
@@ -40,7 +40,7 @@ input file: List of Bracken report files, SampleName
     Example:
                 Path/to/BrackenFilename\tSampleA
                 Path/to/BrackenFilename\tSampleB
-                Path/to/BrackenFilenmae\tSampleC
+                Path/to/BrackenFilename\tSampleC
 
 optional input:
 
