@@ -128,7 +128,7 @@ def parse_infile(infile):
 
     with open(infile, 'r') as file:
         for line in file:
-            X = line.rstrip().split(', ')
+            X = line.rstrip().split('\t')
             filename = X[0]
             samplename = X[1]
             file_lookup[filename] = samplename
@@ -144,7 +144,7 @@ def parse_krakenfile(krakenfile):
 
     with open(krakenfile, 'r') as file:
         for line in file:
-            X = line.rstrip().split(', ')
+            X = line.rstrip().split('\t')
             filename = X[0]
             samplename = X[1]
 
@@ -239,7 +239,7 @@ def parse_legend(lgnd_file):
 
     with open(lgnd_file, 'r') as file:
         for line in file:
-            X = line.rstrip().split(', ')
+            X = line.rstrip().split('\t')
             label = X[0]
             color = X[1]
             lgnd_lbs.append(label)
