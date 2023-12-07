@@ -82,7 +82,7 @@ Requires:
 * Python 3.6+
 * Matplotlib
 * Pandas
-* Kraken
+* Kraken2
 * Bracken
 
 Ref Links:
