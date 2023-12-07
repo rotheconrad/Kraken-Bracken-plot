@@ -68,7 +68,7 @@ optional input:
 
 output: stacked bar plots in vector pdf format. Publication ready.
 
-## Running Kraken and Bracken
+## Running Kraken2 and Bracken
 
 Example batch processing scripts for an HPC running a slurm scheduler are
 included for reference under `sbatch/`. Kraken and Bracken both rely on a 
