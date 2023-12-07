@@ -6,6 +6,8 @@
 Builds bar plots from Bracken results with optional adjustment for
 unclassified reads from Kraken results.
 
+## Motivation
+
 Bracken modifies Kraken results for a more acurate abundance estimate
 which is great but Bracken does not include the unclassified reads. I
 think it is important for a thorough analysis to report the fraction of
@@ -20,6 +22,8 @@ Total Reads" is only the fractional total of reads assigned to the
 "Level ID" specified (the unclassified reads are not counted). With this
 optional adjustment, our plots will show the fraction of total reads
 (including unclassified).
+
+## Usage
 
 ```bash
 python Kraken-Bracken-plot.py -h
@@ -63,6 +67,14 @@ optional input:
                 Rickettsiales\t#43a2ca
 
 output: stacked bar plots in vector pdf format. Publication ready.
+
+## Running Kraken and Bracken
+
+Example batch processing scripts for an HPC running a slurm scheduler are
+included for reference. Kraken and Bracken both rely on a Kraken database
+which can either be pre-built or created *ad hoc* through `kraken2-build`.
+
+## Requirements and References
 
 Requires:
 
