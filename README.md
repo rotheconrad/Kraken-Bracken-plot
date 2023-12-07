@@ -71,8 +71,9 @@ output: stacked bar plots in vector pdf format. Publication ready.
 ## Running Kraken and Bracken
 
 Example batch processing scripts for an HPC running a slurm scheduler are
-included for reference. Kraken and Bracken both rely on a Kraken database
-which can either be pre-built or created *ad hoc* through `kraken2-build`.
+included for reference under `sbatch/`. Kraken and Bracken both rely on a 
+Kraken database which can be obtained by the tool directly via `kraken2-build`
+as either a pre-built database or one created *ad hoc* by the user.
 
 ## Requirements and References
 
