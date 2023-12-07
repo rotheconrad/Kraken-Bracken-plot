@@ -21,6 +21,10 @@ Total Reads" is only the fractional total of reads assigned to the
 optional adjustment, our plots will show the fraction of total reads
 (including unclassified).
 
+```bash
+python Kraken-Bracken-plot.py -h
+```
+
 Input files are all two column tab ("\t") separated files (tsv).
 
 input file: List of Bracken report files, SampleName
@@ -58,6 +62,14 @@ optional input:
                 Rickettsiales\t#43a2ca
 
 output: stacked bar plots in vector pdf format. Publication ready.
+
+Requires:
+
+* Python 3.6+
+* Matplotlib
+* Pandas
+* Kraken
+* Bracken
 
 Ref Links:
 
