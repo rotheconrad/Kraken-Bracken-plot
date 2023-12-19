@@ -1,4 +1,4 @@
-# kraken-Bracken-plot
+# Plot Kraken, Kraken 2 and Bracken results
  Creates stacked bar plots from Kraken 2 and Bracken output. The plot is a vectorized pdf file that can be opened in Adobe Illustrator or other for additional modification.
 
 ![Kraken-Bracken plot](https://github.com/rotheconrad/Kraken-Bracken-plot/blob/main/Kraken-Bracken-plot_example_genus.png)
