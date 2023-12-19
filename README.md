@@ -1,14 +1,14 @@
-# Kracken-Bracken-plot
- Creates stacked bar plots from Kracken and Bracken output. The plot is a vectorized pdf file that can be opened in Adobe Illustrator or other for additional modification.
+# kraken-Bracken-plot
+ Creates stacked bar plots from Kraken 2 and Bracken output. The plot is a vectorized pdf file that can be opened in Adobe Illustrator or other for additional modification.
 
-![Kracken-Bracken plot](https://github.com/rotheconrad/Kracken-Bracken-plot/blob/main/Kracken-Bracken-plot_example_genus.png)
+![Kraken-Bracken plot](https://github.com/rotheconrad/Kraken-Bracken-plot/blob/main/Kraken-Bracken-plot_example_genus.png)
 
 Builds bar plots from Bracken results with optional adjustment for
 unclassified reads from Kraken results.
 
 ## Motivation
 
-Bracken modifies Kraken results for a more acurate abundance estimate
+Bracken modifies Kraken 2 results for a more acurate abundance estimate
 which is great but Bracken does not include the unclassified reads. For
 more a thorough analysis, this scripts incorporates the fraction of
 the metagenome that is not classified compared to what is classified.
@@ -94,5 +94,5 @@ Ref Links:
 
 # Customized figure example:
 
-<img width="930" alt="image" src="https://github.com/rotheconrad/Kracken-Bracken-plot/assets/36962040/67d1abae-0ac8-48f3-825e-7a7aeecf9b85">
+<img width="930" alt="image" src="https://github.com/rotheconrad/Kraken-Bracken-plot/assets/36962040/67d1abae-0ac8-48f3-825e-7a7aeecf9b85">
 
