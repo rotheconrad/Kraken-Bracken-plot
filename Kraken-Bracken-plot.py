@@ -19,7 +19,7 @@ Total Reads" is only the fractional total of reads assigned to the
 optional adjustment, our plots will show the fraction of total reads
 (including unclassified).
 
-input file: List of Bracken report files, SampleName
+input file: List of Bracken report files\tSampleName
 
 -i, input_file_specificiations:
     This is a .txt file with one entry per line in the order you want.
