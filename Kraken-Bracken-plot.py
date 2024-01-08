@@ -403,7 +403,7 @@ def main():
         )
     parser.add_argument(
         '-i', '--input_file_specifications',
-        help='Text file with path/to/filename.bracken, SampleName.',
+        help='Text file with path/to/filename.bracken\tSampleName.',
         metavar='',
         type=str,
         required=True
@@ -417,7 +417,7 @@ def main():
         )
     parser.add_argument(
         '-k', '--kraken_file_specifications',
-        help='(Optional) Text file with path/to/filename.kraken, SampleName.',
+        help='(Optional) Text file with path/to/filename.kraken\tSampleName.',
         metavar='',
         type=str,
         required=False
