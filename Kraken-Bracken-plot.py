@@ -55,7 +55,8 @@ optional input:
 
 outputs: 
 Plot  (-p): stacked bar plots in vector pdf format. Optionally culled to the top N taxa (option -t).
-Table (-o): The abundances of each taxa from among the inputs in a .TSV file -- not culled. Rows as samples and columns as taxa.
+Table (-o): Optionally outputs the abundances of each taxa from among the inputs in a .TSV file -- not 
+culled for top N taxa. Rows as samples and columns as taxa. This is the underlying data used to construct the plot.
 
 Ref Links:
 https://ccb.jhu.edu/software/kraken2
