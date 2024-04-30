@@ -53,7 +53,9 @@ optional input:
                 Sphingobacteriales\t#8856a7
                 Rickettsiales\t#43a2ca
 
-output: stacked bar plots in vector pdf format. Publication ready.
+outputs: 
+Plot  (-p): stacked bar plots in vector pdf format. Optionally culled to the top N taxa (option -t).
+Table (-o): The abundances of each taxa from among the inputs in a .TSV file -- not culled. Rows as samples and columns as taxa.
 
 Ref Links:
 https://ccb.jhu.edu/software/kraken2
@@ -420,7 +422,7 @@ def main():
         help='What do you want to name the output table?',
         metavar='',
         type=str,
-        required=True
+        required=False
         )
     parser.add_argument(
         '-k', '--kraken_file_specifications',
