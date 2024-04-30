@@ -328,7 +328,7 @@ def plot_prep(df, unclassified, lgnd_file, top_classes):
 
     print('\n\n', df2)
 
-    return df2, lgnd_clr
+    return df2, lgnd_clr, df
 
 
 def bracken_plot(df, outfile, lgnd_clmns, lgnd_clr):
@@ -409,8 +409,15 @@ def main():
         required=True
         )
     parser.add_argument(
+        '-p', '--output_plot',
+        help='What do you want to name the output plot?',
+        metavar='',
+        type=str,
+        required=True
+        )
+    parser.add_argument(
         '-o', '--output_file',
-        help='What do you want to name the output file?',
+        help='What do you want to name the output table?',
         metavar='',
         type=str,
         required=True
@@ -438,8 +445,8 @@ def main():
         required=False
         )
     parser.add_argument(
-        '-t', '--number_top_classes',
-        help='(Optional) Number most abundant classes to plot (Default=20).',
+        '-t', '--number_top_taxa',
+        help='(Optional) Number of most abundant taxa to plot (Default=20).',
         metavar='',
         type=int,
         default=20,
@@ -452,21 +459,24 @@ def main():
 
     # define input params
     infile = args['input_file_specifications']
+    outplot = args['output_plot']
     outfile = args['output_file']
     krakenfile = args['kraken_file_specifications']
     lgnd_file = args['custom_legend_file']
     lgnd_clmns = args['number_legend_columns']
-    top_classes = args['number_top_classes']
+    top_classes = args['number_top_taxa']
 
     # Read in the Kraken files and build a dataframe with columns:
     # Sample, Classification, Fraction
     df, unclassified = parse_bracken(infile, krakenfile)
 
     # setup the df for plotting
-    df, lgnd_clr = plot_prep(df, unclassified, lgnd_file, top_classes)
+    df, lgnd_clr, df_out = plot_prep(df, unclassified, lgnd_file, top_classes)
+
+    df_out.to_csv(outfile)
 
     # build the plot
-    _ = bracken_plot(df, outfile, lgnd_clmns, lgnd_clr)
+    _ = bracken_plot(df, outplot, lgnd_clmns, lgnd_clr)
 
     print('\n\nComplete success space cadet! The script without errors.\n\n')
 
