@@ -420,7 +420,7 @@ def main():
         )
     parser.add_argument(
         '-o', '--output_file',
-        help='What do you want to name the output table?',
+        help='(Optional) What do you want to name the output table?',
         metavar='',
         type=str,
         required=False
@@ -455,6 +455,12 @@ def main():
         default=20,
         required=False
         )
+    parser.add_argument(
+        '--as-otus',
+        help='(Optional) Strip the taxa names from the output table (-o is required).',
+        action='store_true',
+        required=False
+        )
     args=vars(parser.parse_args())
 
     # Do what you came here to do:
@@ -463,7 +469,8 @@ def main():
     # define input params
     infile = args['input_file_specifications']
     outplot = args['output_plot']
-    outfile = args['output_file']
+    if args['output_file']:
+        outfile = args['output_file']
     krakenfile = args['kraken_file_specifications']
     lgnd_file = args['custom_legend_file']
     lgnd_clmns = args['number_legend_columns']
@@ -476,7 +483,12 @@ def main():
     # setup the df for plotting
     df, lgnd_clr, df_out = plot_prep(df, unclassified, lgnd_file, top_classes)
 
-    df_out.to_csv(outfile)
+    if args['as_otus']:
+        colst=[]
+        for col in range(len(df_out.columns)):
+            colst.append("otu_" + str(col))
+        df_out.columns=colst
+        df_out.to_csv(outfile)
 
     # build the plot
     _ = bracken_plot(df, outplot, lgnd_clmns, lgnd_clr)
