@@ -469,7 +469,7 @@ def main():
     # define input params
     infile = args['input_file_specifications']
     outplot = args['output_plot']
-    if args['output_file']:
+    if args['output_file'] is not None:
         outfile = args['output_file']
     krakenfile = args['kraken_file_specifications']
     lgnd_file = args['custom_legend_file']
@@ -488,6 +488,8 @@ def main():
         for col in range(len(df_out.columns)):
             colst.append("otu_" + str(col))
         df_out.columns=colst
+        df_out.to_csv(outfile)
+    if ~args['as_otus'] and args['output_file'] is not None:
         df_out.to_csv(outfile)
 
     # build the plot
